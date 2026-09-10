@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:#080808;
+    color:white;
+    font-family: Arial, sans-serif;
+}
+
+header{
+    /* height: 100px; */
+    height: 90px;
+    padding: 0 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #222;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.logosa{
+    font-size: 45px;
+    color: #d99a3e;
+}
+
+.logo-text h2{
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+
+
+.logo-text p{
+    color: #777;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+
+nav{
+    display: flex;
+    gap: 45px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #d99a3e;
+}
+
+/* left text */
+.principal{
+    height: 600px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.principaltext{
+    width: 45%;
+    padding: 120px 0 0 80px;
+    z-index: 2;
+}
+.local{
+    color: #aaa;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.principaltext h1{
+    font-size: 65px;
+    margin-top: 20px;
+    line-height: 1;
+}
+
+.principaltext h1 span{
+    color: #d99a3e;
+}
+
+.description{
+    margin-top: 25px;
+    color: #aaa;
+    line-height: 1.8;
+}
+.principalbuttons{
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.principalbuttons button{
+    width: 180px;
+    height: 50px;
+    border: 1px solid #555;
+    border-radius: 10px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#explore{
+    background: #d99a3e;
+    color: black;
+    border: none;
+}
+
+#mapb{
+    background: transparent;
+    color: white;
+}
+
+.principalbuttons button:hover{
+    transform: translateY(-4px);
+}
+
+/* imagem lado direito */
+.principalimages{
+    width: 55%;
+    height: 100%;
+    position: relative;
+}
+
+.principalimages img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+#previous, #next{
+    position: absolute;
+     /* ボタンを画像の真ん中に置く */
+    top: 50%;
+    /* ボタンの半分だけ上に動かして中央にする */
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#previous{
+    left: 20px;
+}
+#next{
+    right: 20px;
+}
+#previous:hover, #next:hover{
+    background: #d99a3e;
+    color: black;
+}
+
+
+
+#spots{
+     padding: 60px 60px 80px 60px;
+    background: #0d0d0d;
+}
+
+.spotstitle{
+    text-align: center;
+}
+
+.spotstitle p{
+    color: #d99a3e;
+    font-size: 12px;
+    letter-spacing: 4px;
+}
+
+.spotstitle h2{
+    font-size: 36px;
+    margin-top: 10px;
+}
+
+.spotlist{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 45px;
+}
+.spotcard{
+    width: 310px;
+    background: #141414;
+    border: 1px solid #292929;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.spotcard:hover{
+    transform: translateY(-7px);
+    border-color: #d99a3e;
+}
+
+.spotcard img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+.spotcard:hover img{
+    transform: scale(1.05);
+}
+.spottext{
+    padding: 20px;
+}
+
+.spottext h3{
+    font-size: 18px;
+    transition: 0.3s;
+}
+.spotcard:hover h3{
+    color: #d99a3e;
+}
+
+.spottext h4{
+    color: #d99a3e;
+    font-size: 13px;
+    margin-top: 5px;
+    font-weight: normal;
+}
+.spottext p{
+    color: #aaa;
+    font-size: 13px;
+    margin-top: 15px;
+    line-height: 1.7;
+}
+
+/* spot情報 */
+.spotdata{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 12px;
+}
+
+.spotdata span{
+    color: #888;
+    font-size: 11px;
+}
+
+/* mapas */
+.mapsection{
+    padding: 60px 60px 70px 60px;
+    background: #080808;
+}
+
+.maptitle{
+    text-align: center;
+}
+
+.maptitle p{
+    color: #d99a3e;
+    font-size: 12px;
+    letter-spacing: 4px;
+}
+
+.maptitle h2{
+    font-size: 36px;
+    margin-top: 10px;
+}
+.mapbox{
+    width: 80%;
+    max-width: 1200px;
+    margin: 40px auto 0 auto;
+    padding: 25px;
+    background: #111;
+    border: 1px solid #292929;
+    border-radius: 12px;
+}
+
+.mapinfo{
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.mapinfo h3{
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.mapinfo p{
+    color: #888;
+    font-size: 12px;
+    margin-top: 8px;
+    font-weight: 600;
+}
+
+
+/* google mapa */
+#map{
+    width: 100%;
+    height: 460px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.mapbottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+}
+.mapbottom p{
+    color: #888;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+.mapbottom p:first-child{
+    color: #d99a3e;
+}
+
+/* 情報ウィンドウ */
+.info{
+    width: 220px;
+    color: #111;
+}
+
+.info img{
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.info h3{
+    margin-top: 8px;
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+}
+
+.info p{
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #222;
+    font-weight: 600;
+}
+
+.info h4{
+    color: #d99a3e;
+    font-size: 12px;
+    margin-top: 4px;
+    font-weight: 600;
+}
+
+.infodata{
+    margin-top: 8px;
+}
+
+.infodata p{
+    margin-top: 4px;
+    font-size: 12px;
+    color: #333;
+}
+
+/* infom */
+.cityinfo{
+    display: flex;
+    margin-top: 35px;
+    gap: 45px;
+}
+.cityitem{
+    padding-right: 35px;
+    border-right: 1px solid #333;
+}
+.cityitem:last-child{
+    border-right: none;
+}
+.cityitem h3{
+    color: #d99a3e;
+    font-size: 18px;
+}
+.cityitem p{
+    color: #888;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+
+
+
+
+.ui-tooltip{
+    padding: 8px 12px;
+    background: #141414;
+    color: white;
+    border: 1px solid #d99a3e;
+    border-radius: 10px;
+    font-size: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}

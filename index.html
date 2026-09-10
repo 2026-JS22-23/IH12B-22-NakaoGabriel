@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAO PAULO Tourism</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1 class="logosa">SP</h1>
+            <div class="logo-text">
+                <h2>SAO PAULO</h2>
+                <p>DISCOVER MY HOMETOWN</p>
+            </div>
+        </div>
+        <nav>
+            <a href="#">HOME</a>
+            <a href="#spots">SPOTS</a>
+            <a href="#map">MAP</a>
+        </nav>
+    </header>
+
+    <section class="principal">
+        <div class="principaltext">
+            <p class="local">
+                 SAO PAULO ・ BRAZIL
+            </p>
+            <h1>
+                DISCOVER<br>
+                <span>SAO PAULO</span>
+            </h1>
+            <p class="description">
+                Culture, history and diversity.<br>
+                Discover some special places in Sao Paulo.
+            </p>
+            <div class="principalbuttons">
+                <button id="explore">EXPLORE PLACES</button>
+                <button id="mapb">VIEW MAP</button>
+            </div>
+            <div class="cityinfo">
+                <div class="cityitem">
+                    <h3 id="population">0</h3>
+                    <p>人口</p>
+                </div>
+                <div class="cityitem">
+                    <h3 id="year">0</h3>
+                    <p>設立年</p>
+                </div>
+                <div class="cityitem">
+                    <h3 id="places">0</h3>
+                    <p>観光スポット</p>
+                </div>
+            </div>
+        </div>
+        <div class="principalimages">
+            <button id="previous"><</button>
+            <img id="principalimage" src="images/principal.png" alt="SAO PAULO">
+            <button id="next">></button>
+        </div>
+    </section>
+    <section id="spots">
+        <div class="spotstitle">
+            <p>EXPLORE</p>
+            <h2>PLACES TO VISIT</h2>
+        </div>
+
+         <div class="spotlist">
+            <!-- １ -->
+            <div class="spotcard" title="💡 建物の下には約74メートルの大きな空間があります">
+                <img src="images/MASP.jpg"
+                datafirst="images/MASP.jpg"
+                datasecond="images/MASP2.jpg"
+                alt="MASP">
+
+                <div class="spottext">
+                    <h3>MASP</h3>
+                    <h4>（サンパウロ美術館）</h4>
+                    <div class="spotdata">
+                        <span>📍 パウリスタ大通り</span>
+                        <span>📅 1947年設立</span>
+                    </div>
+                    <p>
+                        サンパウロの中心部、パウリスタ大通りにある有名な美術館です。
+                        1947年に設立され、現在は絵画、彫刻、写真など、
+                        11,000点以上の作品を所蔵しています。
+                        赤い柱で支えられた特徴的な建物も有名で、
+                        サンパウロを代表する観光スポットの一つです。
+                    </p>
+                </div>
+            </div>
+            <!-- ２ -->
+            <div class="spotcard" title="💡 日本国外最大級の日系コミュニティで知られています">
+                <img src="images/liberdade.jpg"
+                datafirst="images/liberdade.jpg"
+                datasecond="images/liberdade2.jpg"
+                alt="Liberdade">
+
+                <div class="spottext">
+                    <h3>Liberdade</h3>
+                    <h4>（リベルダージ）</h4>
+                    <div class="spotdata">
+                        <span>📍 リベルダージ地区</span>
+                        <span>🏮 日本・東洋文化</span>
+                    </div>
+                    <p>
+                        サンパウロにある東洋文化で有名な地区です。
+                        日本からの移民の歴史が深く、日本料理店やスーパー、
+                        日本の商品を販売する店などが多くあります。
+                        現在では中国や韓国などの文化も見ることができ、
+                        多くの観光客が訪れる人気スポットです。
+                    </p>
+                </div>
+            </div>
+            <!-- ３ -->
+            <div class="spotcard" title="💡 ニューヨークのセントラルパークと比較されることもあります">
+                <img src="images/parque.jpg" 
+                datafirst="images/parque.jpg"
+                datasecond="images/parque2.jpg"
+                alt="Parque Ibirapuera">
+
+                <div class="spottext">
+                    <h3>Parque Ibirapuera</h3>
+                    <h4>（イビラプエラ公園）</h4>
+                    <div class="spotdata">
+                        <span>📍 ヴィラ・マリアナ地区</span>
+                        <span>📅 1954年開園</span>
+                    </div>
+                    <p>
+                        サンパウロを代表する大きな都市公園です。
+                        広い緑地や湖があり、散歩、ランニング、
+                        サイクリングなどを楽しむことができます。
+                        公園内には博物館や文化施設もあり、
+                        市民や観光客の憩いの場所として親しまれています。
+                    </p>
+                </div>
+            </div>
+            <!-- ４ -->
+            <div class="spotcard" title="💡 巨大なモルタデッラサンドイッチが名物です">
+                <img src="images/mercado.jpg" 
+                datafirst="images/mercado.jpg"
+                datasecond="images/mercado2.jpg"
+                alt="Mercado Municipal">
+
+                <div class="spottext">
+                    <h3>Mercado Municipal</h3>
+                    <h4>（サンパウロ市営市場）</h4>
+                    <div class="spotdata">
+                        <span>📍 サンパウロ中心部</span>
+                        <span>📅 1933年開業</span>
+                    </div>
+                    <p>
+                        サンパウロ中心部にある有名な市場で、
+                        「メルカダオン」という名前でも親しまれています。
+                        新鮮な果物、肉、魚、チーズなど多くの食品が販売されています。
+                        ブラジルの食文化を体験できる場所として、
+                        観光客にも人気があります。
+                    </p>
+                </div>
+            </div>
+         </div>
+
+    </section>
+    <div class="mapbox">
+
+    <section class="mapsection">
+        <div class="maptitle">
+            <p>MAP</p>
+            <h2>FIND THE PLACES</h2>
+        </div>
+        <div class="mapinfo">
+            <h3>SAO PAULO MAP</h3>
+            <p>マーカーをクリックして観光スポットの情報を見ることができます。</p>
+        </div>
+        
+        <div id="map"></div>
+        <div class="mapbottom">
+            <p>4 TOURIST SPOTS</p>
+            <p>SAO PAULO・BRAZIL</p>
+
+        </div>
+    </section>
+    </div>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"></script>
+    <script>
+        function initMap(){
+            // Google Mapを作る
+            const map = new google.maps.Map(document.getElementById("map"),{
+                zoom: 13,
+                center : { lat: -23.5600, lng: -46.6450},
+                zoomControl: true,
+                mapTypeControl: true,
+                streetViewControl: false,
+            });
+            // 観光スポットのデータ
+            const locations = [
+                { 
+                    name:"MASP",
+                    jpname:"（サンパウロ美術館）",
+                    lat: -23.56146,
+                    lng: -46.65595,
+                    image: "images/MASP.jpg",
+                    place: "📍 パウリスタ大通り",
+                    year: "📅 1947年設立",
+                    description: "サンパウロを代表する有名な美術館です。"
+                },
+
+                {
+                    name:"Liberdade",
+                    jpname:"（リベルダージ）",
+                    lat: -23.55316,
+                    lng: -46.63554,
+                    image: "images/liberdade.jpg",
+                    place: "📍 リベルダージ地区",
+                    year: "🏮 日本・東洋文化",
+                    description: "日本やアジアの文化を感じることができる人気エリアです。"
+                },
+                {
+                    name:"Parque Ibirapuera",
+                    jpname:"（イビラプエラ公園）",
+                    lat: -23.58748,
+                    lng: -46.65828,
+                    image:"images/parque.jpg",
+                    place: "📍 ヴィラ・マリアナ地区",
+                    year: "📅 1954年開園",
+                    description: "自然や文化施設を楽しむことができる大きな都市公園です。"
+                },
+                {
+                    name:"Mercado Municipal",
+                    jpname:"（サンパウロ市営市場）",
+                    lat: -23.54167,
+                    lng: -46.62917,
+                    image: "images/mercado.jpg",
+                    place: "📍 サンパウロ中心部",
+                    year: "📅 1933年開業",
+                    description:  "サンパウロの食文化を楽しむことができる有名な市場です。"
+                },
+            ];
+            let currentInfoWindow = null;
+            locations.forEach(function(loc){
+                const marker = new google.maps.Marker({
+                    position: { lat: loc.lat, lng: loc.lng },
+                    map: map,
+                    title: loc.name,
+                });
+                const infoWindow = new google.maps.InfoWindow({
+                    content:
+                    "<div class='info'>" +
+                    "<img src='" + loc.image + "'>" +
+                    "<h3>" + loc.name + "</h3>" +
+                    "<h4>" + loc.jpname + "</h4>" +
+                    "<div class='infodata'>" +
+                    "<p>" + loc.place + "</p>" +
+                    "<p>" + loc.year + "</p>" +
+                    "</div>" +
+                    "<p>" + loc.description + "</p>" +
+                    "</div>"
+                });
+                marker.addListener("click", function(){
+                    if(currentInfoWindow != null){
+                        currentInfoWindow.close();
+                    }
+                    infoWindow.open(map, marker);
+                    currentInfoWindow = infoWindow;
+                });
+                map.addListener("click", function(){
+                    infoWindow.close();
+                });
+            });
+        }
+        $(document).ready(function(){
+            // 観光スポットにマウスを合わせた時
+            // tooltip = 小さい説明を表示する
+            $(".spotcard").tooltip();
+
+
+            $("#explore").click(function(){
+                $("html, body").animate({
+                    scrollTop: $("#spots").offset().top
+                }, 700);
+            });
+            $("#mapb").click(function(){
+                $("html, body").animate({
+                    scrollTop: $("#map").offset().top
+                }, 700);
+            });
+            function countUp(element, finalValue, text){
+                let value = 0;
+                const timer = setInterval(function(){
+                    value += finalValue / 80;
+                    if(value >= finalValue){
+                        $(element).text(finalValue + text);
+                        clearInterval(timer);
+                    }else{
+                        $(element).text(Math.floor(value) + text);
+                    }
+                }, 25);
+            }
+            // 人口
+            countUp("#population", 1190, "万+");
+            // 設立年
+            countUp("#year", 1554, "年");
+            // 観光スポット
+            countUp("#places", 4, "");
+
+            const principalImages = [
+                "images/principal.png",
+                "images/principal2.png",
+                "images/principal3.png"
+            ];
+            // 今表示している画像
+            let principalnumber = 0;
+            // 次の画像を表示
+            function nextImage(){
+                principalnumber++;
+                 // 最後の画像の次は最初に戻る
+                if(principalnumber >= principalImages.length){
+                    principalnumber = 0;
+                }
+                // 今の画像を消してから次の画像を表示
+                $("#principalimage").fadeOut(300, function(){
+                    // principalimagesから今の番号の画像を選んでsrcを変更する
+                    $("#principalimage").attr("src", principalImages[principalnumber]);
+                    // 新しい画像
+                    $("#principalimage").fadeIn(300);
+                });
+            }
+            // 次のbutton
+            $("#next").click(function(){
+                nextImage();
+            });
+            // 前の
+            $("#previous").click(function(){
+                principalnumber--;
+                // 最初の画像より前なら最後に戻る
+                if(principalnumber < 0){
+                    principalnumber = principalImages.length - 1;
+                }
+                $("#principalimage").fadeOut(300, function(){
+                    // principalimagesから今の番号の画像を選んでsrcを変更する
+                    $("#principalimage").attr("src", principalImages[principalnumber]);
+                    // 新しい画像
+                    $("#principalimage").fadeIn(300);
+                });
+            });
+            // ５秒ごとに変わる
+            setInterval(function(){
+                nextImage();
+            }, 5000);
+
+            // cardにマウスを乗せた時
+            $(".spotcard").mouseenter(function(){
+                // cardの中ノ画像
+                const image = $(this).find("img");
+                // fadeTo = 画像の透明度をゆっくり変更する
+                // 200 = 0.2秒、0.8 = 透明度80%
+                image.stop(true, true).fadeTo(200, 0.8, function(){
+                    // ２枚目の画像に変える
+                    image.attr("src", image.attr("datasecond"));
+                    image.fadeTo(300, 1);
+                });
+            });
+            // cardからマウスを外すとき
+            $(".spotcard").mouseleave(function(){
+                const image = $(this).find("img");
+                image.stop(true, true).fadeTo(150, 0.8, function(){
+                    // 最初の画像に戻す
+                    image.attr("src", image.attr("datafirst"));
+                    image.fadeTo(250, 1);
+            });
+        });
+
+        });
+        
+        window.initMap = initMap;
+    </script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAKLjisxFelKwIl1_G6MiEO9-ya7Twr5s&callback=initMap">
+    </script>
+</body>
+</html>
